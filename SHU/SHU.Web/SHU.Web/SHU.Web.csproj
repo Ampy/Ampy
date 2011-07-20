@@ -83,6 +83,18 @@
     <Content Include="ArtsCollect\7.jpg" />
     <Content Include="ArtsCollect\8.jpg" />
     <Content Include="ArtsCollect\9.jpg" />
+    <Content Include="Content\75-black.png" />
+    <Content Include="Content\bottom.css" />
+    <Content Include="Content\fastf.png" />
+    <Content Include="Content\next-horizontal.png" />
+    <Content Include="Content\next-vertical.png" />
+    <Content Include="Content\next.png" />
+    <Content Include="Content\pause.png" />
+    <Content Include="Content\play.png" />
+    <Content Include="Content\prev-horizontal.png" />
+    <Content Include="Content\prev-vertical.png" />
+    <Content Include="Content\prev.png" />
+    <Content Include="Content\rewind.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -116,6 +128,8 @@
     <Content Include="Scripts\jquery-1.5.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.pikachoose.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
