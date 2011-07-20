@@ -1,0 +1,29 @@
+﻿@model SHU.Arts.Arts
+@{
+    Layout = "";
+
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/Arts/Index" method="post" target="_blank">
+    @using (Html.BeginForm())
+    {
+        var m = SHU.Arts.ArtsServices.GetArtsBy("", "", "");
+
+        var slList = SHU.Arts.ArtsServices.GetEnumList("年级");
+        @Html.DropDownList("NJ", slList);
+
+                                        slList = SHU.Arts.ArtsServices.GetEnumList("学期");                                    
+        @Html.DropDownList("XQ", slList);
+
+                                        slList = SHU.Arts.ArtsServices.GetEnumList("课程");                                    
+        @Html.DropDownList("KC", slList);
+        <input type="submit" value="查询" />
+    }
+    </form>
+</body>
+</html>

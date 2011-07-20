@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ArtsDataClass">
+  <DataContextMoniker Name="/ArtsDataClassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0770ac08-27c5-464d-9247-25fff77ad89d" absoluteBounds="1.625, 1.625, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/ArtsDataClassDataContext/Arts" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a57eedd-8090-4239-8262-25fb224665c9" absoluteBounds="1.6400000000000001, 2.085, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41fd484a-e994-44d3-8a87-15f392931feb" absoluteBounds="4, 1.625, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/ArtsDataClassDataContext/EnumList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="454295eb-53ee-432f-b3c2-2c87e7cb4d8e" absoluteBounds="4.0150000000000006, 2.085, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

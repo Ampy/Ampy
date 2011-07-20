@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MPTEST" Class="ArtsDataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=MPTEST;Persist Security Info=True;User ID=sa" SettingsObjectName="SHU.Arts.Properties.Settings" SettingsPropertyName="MPTESTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Arts">
+    <Type Name="Arts">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="XingMing" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NianJi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Jie" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="XueQi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="KeCheng" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="JiangXiang" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ZuoPinLuJing" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ZuoPinMingCheng" Type="System.String" DbType="NVarChar(100)" CanBeNull="false" />
+      <Column Name="Ji" Storage="_Ji" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="EnumList">
+    <Type Name="EnumList">
+      <Column Name="ID" AutoSync="Never" Type="System.Int32" DbType="Int" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EnumType" Type="System.String" DbType="nvarchar(10)" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="nvarchar(20)" CanBeNull="false" />
+      <Column Name="Sort" Type="System.Int32" DbType="Int" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

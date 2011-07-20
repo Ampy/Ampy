@@ -1,0 +1,31 @@
+﻿@model IEnumerable<SHU.Arts.Arts>
+@{
+    Layout = "";
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <link href="@Url.Content("~/Content/bottom.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.pikachoose.js")" type="text/javascript"></script>
+    <script language="javascript">
+        $(document).ready(
+				function () {
+				    $("#pikame").PikaChoose({ carousel: true });
+				});
+    </script>
+</head>
+<body>
+    <!-- not really needed, i'm using it to center the gallery. -->
+    <div class="pikachoose">
+        Basic example - with carousel
+        <ul id="pikame" class="jcarousel-skin-pika">
+            @foreach (var item in Model)
+            {
+                <li><a href="#">
+                    <img src="@item.ZuoPinLuJing"/></a><span>@item.ZuoPinMingCheng</span></li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
