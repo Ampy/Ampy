@@ -114,5 +114,19 @@ namespace SHU.Web.Controllers
                 return View();
             }
         }
+
+        public ViewResult Subject()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Subject(FormCollection collection)
+        {
+            var p = collection[0];
+            
+            var m = SHU.Arts.ArtsServices.GetArtsBy("", "", "");
+            return View("QueryResult", m);
+        }
     }
 }
