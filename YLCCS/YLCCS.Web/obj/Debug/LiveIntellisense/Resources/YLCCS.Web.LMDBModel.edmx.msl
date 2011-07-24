@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="YLDBModelStoreContainer" CdmEntityContainer="YLDBEntities">
+    <EntitySetMapping Name="Aerobic">
+      <EntityTypeMapping TypeName="YLDBModel.Aerobic">
+        <MappingFragment StoreEntitySet="Aerobic">
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="Recorder" ColumnName="Recorder" />
+          <ScalarProperty Name="ExerciseDate" ColumnName="ExerciseDate" />
+          <ScalarProperty Name="Distance" ColumnName="Distance" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="HeartRate" ColumnName="HeartRate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Project" ColumnName="Project" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BasicData">
+      <EntityTypeMapping TypeName="YLDBModel.BasicData">
+        <MappingFragment StoreEntitySet="BasicData">
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="Recorder" ColumnName="Recorder" />
+          <ScalarProperty Name="ExerciseDate" ColumnName="ExerciseDate" />
+          <ScalarProperty Name="BloodPressureH" ColumnName="BloodPressureH" />
+          <ScalarProperty Name="BloodPressureL" ColumnName="BloodPressureL" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Strength">
+      <EntityTypeMapping TypeName="YLDBModel.Strength">
+        <MappingFragment StoreEntitySet="Strength">
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="Recorder" ColumnName="Recorder" />
+          <ScalarProperty Name="ExerciseDate" ColumnName="ExerciseDate" />
+          <ScalarProperty Name="Groups" ColumnName="Groups" />
+          <ScalarProperty Name="Times" ColumnName="Times" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Project" ColumnName="Project" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

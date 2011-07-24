@@ -1,0 +1,3 @@
+D:\Products\YLCCS\YLCCS
+Generated_Code\YLCCS.Web.g.cs
+Generated_Code\Models\Shared\User.shared.cs

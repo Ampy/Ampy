@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YLCCS", "YLCCS\YLCCS.csproj", "{8A902CE6-363D-4E69-9905-BA8BE52CA0EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A0EBBD1-668B-4EAF-BF99-DA26598B5276} = {0A0EBBD1-668B-4EAF-BF99-DA26598B5276}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YLCCS.Web", "YLCCS.Web\YLCCS.Web.csproj", "{0A0EBBD1-668B-4EAF-BF99-DA26598B5276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A902CE6-363D-4E69-9905-BA8BE52CA0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A902CE6-363D-4E69-9905-BA8BE52CA0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A902CE6-363D-4E69-9905-BA8BE52CA0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A902CE6-363D-4E69-9905-BA8BE52CA0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0EBBD1-668B-4EAF-BF99-DA26598B5276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0EBBD1-668B-4EAF-BF99-DA26598B5276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0EBBD1-668B-4EAF-BF99-DA26598B5276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0EBBD1-668B-4EAF-BF99-DA26598B5276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

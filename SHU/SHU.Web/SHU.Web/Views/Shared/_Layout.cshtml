@@ -10,16 +10,15 @@
 <body>
     <div class="page">
         <header>
-            <div id="title">
-                <h1>My MVC Application</h1>
-            </div>
-            <div id="logindisplay">
-                @Html.Partial("_LogOnPartial")
+
+            <div id="headdisplay">
+                118ART.COM      上海大学美术学院   数码艺术中心      2011年9月
+                @*@Html.Partial("_LogOnPartial")*@
             </div>
             <nav>
                 <ul id="menu">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("首页", "Index", "Arts")</li>
+                    <li>@Html.ActionLink("课程", "Subject", "Arts")</li>
                 </ul>
             </nav>
         </header>

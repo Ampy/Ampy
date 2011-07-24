@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="YLCCS.App" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAABIAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.ApplicationStrings" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAB0AAAAAAEIIAAAACBEAAgAWAAAAAAAABADEAQQIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.ErrorResources" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAACAAACIAEAAAABEAAAAQAAAAAAEAAAAAAABIg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.SecurityQuestions" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAABAAACQIJEAAAAQAAAAAAIAQAIBAABIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.DataBindingExtensions" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Helpers\DataBindingExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.DataFieldExtensions" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\DataFieldExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.NotOperatorValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\NotOperatorValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YLCCS.ResourceWrapper" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAwAAAAEAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Helpers\ResourceWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.StringFormatValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\StringFormatValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YLCCS.TargetNullValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\TargetNullValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YLCCS.MainPage" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAgAAAAAAAAAAAAAAAAAAAAAEAAQAgBAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.About" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\About.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.ErrorWindow" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAACAA=</HashCode>
+      <FileName>Views\ErrorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Home" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Home.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Controls.BusyIndicator" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgABABgBABUAYAAAAAABABAQQIAAAACACAAAAAAACA=</HashCode>
+      <FileName>Controls\BusyIndicator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Controls.CustomDataForm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Controls\CustomDataForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Controls.VisualStates" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAABAAAAAAEAAAAAAAAEAAAAAABAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\VisualStates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.LoginUI.LoginInfo" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAABCAAAABgAAAgAAAAACAAAASAQAAAAEgAAA=</HashCode>
+      <FileName>Models\LoginInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.LoginUI.LoginForm" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAAAAAAAAAAIAAAAAAgAAAAAAAAAGQIAAEAAA=</HashCode>
+      <FileName>Views\Login\LoginForm.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.LoginUI.LoginRegistrationWindow" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAgAAAQAAAAAAAAEIAAABIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Login\LoginRegistrationWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.LoginUI.LoginStatus" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAIgAAAAAAAAAAABASAAAAAAAA=</HashCode>
+      <FileName>Views\Login\LoginStatus.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.LoginUI.RegistrationForm" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAIAAAAAAQAAAAAABIAAAEgAAAAAAAAAAQAIAAkAAA=</HashCode>
+      <FileName>Views\Login\RegistrationForm.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Web.RegistrationData" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIAhAAAAAQgAAAEAgAAAAAAAACAAAAAQAAAAA=</HashCode>
+      <FileName>Models\RegistrationDataExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Web.User" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UserExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Views.CustomerChart" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAABAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CustomerChart.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Views.CustomerDataEditor2" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAE=</HashCode>
+      <FileName>Views\CustomerDataEditor2.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Views.Page1" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Page1.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Web.Resources.RegistrationDataResources" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQACAAEAAgACAABEAAAAQCAAABAAAABAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YLCCS.Web.Resources.ValidationErrorResources" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAACAAAAAAAAAAAAABEAkAEQAAgAAAAAIAAAAAAJA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="YLCCS.StackTracePolicy" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Views\ErrorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

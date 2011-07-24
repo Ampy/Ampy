@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="YLDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="YLDBModelStoreContainer">
+          <EntitySet Name="Aerobic" EntityType="YLDBModel.Store.Aerobic" store:Type="Tables" Schema="YLCCS" />
+          <EntitySet Name="BasicData" EntityType="YLDBModel.Store.BasicData" store:Type="Tables" Schema="YLCCS" />
+          <EntitySet Name="Strength" EntityType="YLDBModel.Store.Strength" store:Type="Tables" Schema="YLCCS" />
+        </EntityContainer>
+        <EntityType Name="Aerobic">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="ExerciseDate" />
+          </Key>
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Duration" Type="int" />
+          <Property Name="HeartRate" Type="int" />
+          <Property Name="Speed" Type="decimal" Scale="1" />
+          <Property Name="Distance" Type="numeric" Scale="1" />
+          <Property Name="ExerciseDate" Type="datetime" Nullable="false" />
+          <Property Name="Recorder" Type="varchar" MaxLength="50" />
+          <Property Name="RecordTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasicData">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="ExerciseDate" />
+          </Key>
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Weight" Type="decimal" Scale="2" />
+          <Property Name="BloodPressureL" Type="decimal" Scale="2" />
+          <Property Name="BloodPressureH" Type="decimal" Scale="2" />
+          <Property Name="ExerciseDate" Type="datetime" Nullable="false" />
+          <Property Name="Recorder" Type="varchar" MaxLength="50" />
+          <Property Name="RecordTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Strength">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="ExerciseDate" />
+          </Key>
+          <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Weight" Type="decimal" />
+          <Property Name="Times" Type="int" />
+          <Property Name="Groups" Type="int" />
+          <Property Name="ExerciseDate" Type="datetime" Nullable="false" />
+          <Property Name="Recorder" Type="varchar" MaxLength="50" />
+          <Property Name="RecordTime" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="YLDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="YLDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Aerobic" EntityType="YLDBModel.Aerobic" />
+          <EntitySet Name="BasicData" EntityType="YLDBModel.BasicData" />
+          <EntitySet Name="Strength" EntityType="YLDBModel.Strength" />
+        </EntityContainer>
+        <EntityType Name="Aerobic">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="ExerciseDate" />
+          </Key>
+          <Property Type="String" Name="UserId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Project" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Duration" />
+          <Property Type="Int32" Name="HeartRate" />
+          <Property Type="Decimal" Name="Speed" Precision="18" Scale="1" />
+          <Property Type="Decimal" Name="Distance" Precision="18" Scale="1" />
+          <Property Type="DateTime" Name="ExerciseDate" Nullable="false" />
+          <Property Type="String" Name="Recorder" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="RecordTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BasicData">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="ExerciseDate" />
+          </Key>
+          <Property Type="String" Name="UserId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Weight" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="BloodPressureL" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="BloodPressureH" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="ExerciseDate" Nullable="false" />
+          <Property Type="String" Name="Recorder" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="RecordTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Strength">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="Project" />
+            <PropertyRef Name="ExerciseDate" />
+          </Key>
+          <Property Type="String" Name="UserId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Project" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Weight" Precision="18" Scale="0" />
+          <Property Type="Int32" Name="Times" />
+          <Property Type="Int32" Name="Groups" />
+          <Property Type="DateTime" Name="ExerciseDate" Nullable="false" />
+          <Property Type="String" Name="Recorder" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="RecordTime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="YLDBModelStoreContainer" CdmEntityContainer="YLDBEntities">
+          <EntitySetMapping Name="Aerobic">
+            <EntityTypeMapping TypeName="YLDBModel.Aerobic">
+              <MappingFragment StoreEntitySet="Aerobic">
+                <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+                <ScalarProperty Name="Recorder" ColumnName="Recorder" />
+                <ScalarProperty Name="ExerciseDate" ColumnName="ExerciseDate" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="HeartRate" ColumnName="HeartRate" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BasicData">
+            <EntityTypeMapping TypeName="YLDBModel.BasicData">
+              <MappingFragment StoreEntitySet="BasicData">
+                <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+                <ScalarProperty Name="Recorder" ColumnName="Recorder" />
+                <ScalarProperty Name="ExerciseDate" ColumnName="ExerciseDate" />
+                <ScalarProperty Name="BloodPressureH" ColumnName="BloodPressureH" />
+                <ScalarProperty Name="BloodPressureL" ColumnName="BloodPressureL" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Strength">
+            <EntityTypeMapping TypeName="YLDBModel.Strength">
+              <MappingFragment StoreEntitySet="Strength">
+                <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+                <ScalarProperty Name="Recorder" ColumnName="Recorder" />
+                <ScalarProperty Name="ExerciseDate" ColumnName="ExerciseDate" />
+                <ScalarProperty Name="Groups" ColumnName="Groups" />
+                <ScalarProperty Name="Times" ColumnName="Times" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Project" ColumnName="Project" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="LMDBModel">
+        <EntityTypeShape EntityType="YLDBModel.Aerobic" Width="1.5" PointX="0.75" PointY="0.75" Height="2.7341113281249996" />
+        <EntityTypeShape EntityType="YLDBModel.BasicData" Width="1.5" PointX="2.75" PointY="0.75" Height="2.3520719401041656" />
+        <EntityTypeShape EntityType="YLDBModel.Strength" Width="1.5" PointX="4.75" PointY="0.75" Height="2.5430916341145826" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

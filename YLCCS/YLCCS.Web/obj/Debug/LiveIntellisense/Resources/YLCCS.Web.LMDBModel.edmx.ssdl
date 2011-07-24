@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YLDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="YLDBModelStoreContainer">
+    <EntitySet Name="Aerobic" EntityType="YLDBModel.Store.Aerobic" store:Type="Tables" Schema="YLCCS" />
+    <EntitySet Name="BasicData" EntityType="YLDBModel.Store.BasicData" store:Type="Tables" Schema="YLCCS" />
+    <EntitySet Name="Strength" EntityType="YLDBModel.Store.Strength" store:Type="Tables" Schema="YLCCS" />
+  </EntityContainer>
+  <EntityType Name="Aerobic">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Project" />
+      <PropertyRef Name="ExerciseDate" />
+    </Key>
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Project" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="HeartRate" Type="int" />
+    <Property Name="Speed" Type="decimal" Scale="1" />
+    <Property Name="Distance" Type="numeric" Scale="1" />
+    <Property Name="ExerciseDate" Type="datetime" Nullable="false" />
+    <Property Name="Recorder" Type="varchar" MaxLength="50" />
+    <Property Name="RecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BasicData">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ExerciseDate" />
+    </Key>
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="BloodPressureL" Type="decimal" Scale="2" />
+    <Property Name="BloodPressureH" Type="decimal" Scale="2" />
+    <Property Name="ExerciseDate" Type="datetime" Nullable="false" />
+    <Property Name="Recorder" Type="varchar" MaxLength="50" />
+    <Property Name="RecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Strength">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Project" />
+      <PropertyRef Name="ExerciseDate" />
+    </Key>
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Project" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Weight" Type="decimal" />
+    <Property Name="Times" Type="int" />
+    <Property Name="Groups" Type="int" />
+    <Property Name="ExerciseDate" Type="datetime" Nullable="false" />
+    <Property Name="Recorder" Type="varchar" MaxLength="50" />
+    <Property Name="RecordTime" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

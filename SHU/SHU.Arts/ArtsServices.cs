@@ -28,6 +28,21 @@ namespace SHU.Arts
             }
         }
 
+        public static List<Arts> GetArtsBy(string jie, string kecheng)
+        {
+            DbProviderFactory dp = DbProviderFactories.GetFactory(providerstr);
+
+            using (DbConnection conn = dp.CreateConnection())
+            {
+                conn.ConnectionString = connstr;
+                conn.Open();
+                using (ArtsDataClassDataContext artDC = new ArtsDataClassDataContext(conn))
+                {
+                    return artDC.Arts.Where(c => c.Jie == jie && c.KeCheng == kecheng).ToList();
+                }
+            }
+        }
+
         public static List<SelectListItem> GetEnumList(string enumtype)
         {
             List<SelectListItem> slList = new List<SelectListItem>();

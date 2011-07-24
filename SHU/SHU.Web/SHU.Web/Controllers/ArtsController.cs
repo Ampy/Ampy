@@ -123,9 +123,10 @@ namespace SHU.Web.Controllers
         [HttpPost]
         public ViewResult Subject(FormCollection collection)
         {
-            var p = collection[0];
+            var jie = collection["Jie"];
+            var kc = collection["KC"];
             
-            var m = SHU.Arts.ArtsServices.GetArtsBy("", "", "");
+            var m = SHU.Arts.ArtsServices.GetArtsBy(jie,kc);
             return View("QueryResult", m);
         }
     }
