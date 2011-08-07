@@ -1,0 +1,227 @@
+﻿@{
+    
+}
+@using (Html.BeginForm("Subject", "Arts", null, FormMethod.Post, new { @target = "_blank" }))
+{
+    <table>
+        <tr>
+            <td>
+            </td>
+            <td colspan="5">
+                <select id="Jie" name="Jie">
+                    @{
+    for (int i = 1990; i <= 2011; i++)
+    {
+                        <option id=@i.ToString() value="@i.ToString()届">@i.ToString()届</option>
+    }
+                    }
+                </select>
+                <input type="submit" value="查询" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                大一
+            </td>
+            <td>
+                秋
+            </td>
+            <td colspan="2">
+                <input type="radio" id="smzx1" name="KC" value="数码造型1" />数码造型1
+            </td>
+            <td colspan="2">
+                <input type="radio" id="smsc1" name="KC" value="数码色彩1" title="数码色彩1" />数码色彩1
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                冬
+            </td>
+            <td>
+                <input type="radio" id="smcx21" name="KC" value="数码造型2.1" title="数码造型2.1" />数码造型2.1
+            </td>
+            <td>
+                <input type="radio" id="smsc21" name="KC" value="数码色彩2.1" title="数码色彩2.1" />数码色彩2.1
+            </td>
+            <td colspan="2">
+                <input type="radio" id="sx1" name="KC" value="摄像1" title="摄像1" />摄像1
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                春
+            </td>
+            <td>
+                <input type="radio" id="smcx22" name="KC" value="数码造型2.2" title="数码造型2.2" />数码造型2.2
+            </td>
+            <td>
+                <input type="radio" id="smsc22" name="KC" value="数码色彩2.2" title="数码色彩2.2" />数码色彩2.2
+            </td>
+            <td>
+                <input type="radio" id="sx2" name="KC" value="摄像2" title="摄像2" />摄像2
+            </td>
+            <td>
+                <input type="radio" id="ta1" name="KC" value="图案1" title="图案1" />图案1
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                夏
+            </td>
+            <td>
+                <input type="radio" id="czsj1" name="KC" value="创作实践1" title="创作实践1" />创作实践1
+            </td>
+            <td>
+                <input type="radio" id="waxz1" name="KC" value="文案写作1" title="文案写作1" />文案写作1
+            </td>
+            <td colspan="2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                大二
+            </td>
+            <td>
+                秋
+            </td>
+            <td>
+                <input type="radio" id="smcx23" name="KC" value="数码造型2.3" title="数码造型2.3" />数码造型2.3
+            </td>
+            <td>
+                <input type="radio" id="smsc23" name="KC" value="数码色彩2.3" title="数码色彩2.3" />数码色彩2.3
+            </td>
+            <td colspan="2">
+                <input type="radio" id="smgc1" name="KC" value="数码构成1" title="数码构成1" />数码构成1
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                冬
+            </td>
+            <td>
+                <input type="radio" id="smgc2" name="KC" value="数码构成2" title="数码构成2" />数码构成2
+            </td>
+            <td>
+                <input type="radio" id="ta2" name="KC" value="图案2" title="图案2" />图案2
+            </td>
+            <td>
+                <input type="radio" id="sx3" name="KC" value="摄像3" title="摄像3" />摄像3
+            </td>
+            <td>
+                <input type="radio" id="snbx1" name="KC" value="数码表现1" title="数码表现1" />数码表现1
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                春
+            </td>
+            <td>
+                <input type="radio" id="smgc3" name="KC" value="数码构成3" title="数码构成3" />数码构成3
+            </td>
+            <td>
+                <input type="radio" id="smys1" name="KC" value="数码印刷1" title="数码印刷1" />数码印刷1
+            </td>
+            <td>
+                <input type="radio" id="scyx" name="KC" value="市场营销" title="市场营销" />市场营销
+            </td>
+            <td>
+                <input type="radio" id="smbx2" value="数码表现2" title="数码表现2" />数码表现2
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                夏
+            </td>
+            <td>
+                <input type="radio" id="czsj2" name="KC" value="创作实践2" title="创作实践2" />创作实践2
+            </td>
+            <td>
+                <input type="radio" id="xs1" name="KC" value="写生1" title="写生1" />写生1
+            </td>
+            <td colspan="2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                大三
+            </td>
+            <td>
+                秋
+            </td>
+            <td>
+                <input type="radio" id="wl1" name="KC" value="网络1" title="网络1" />网络1
+            </td>
+            <td>
+                <input type="radio" id="smbx3" name="KC" value="数码表现3" title="数码表现3" />数码表现3
+            </td>
+            <td colspan="2">
+                <input type="radio" id="smys2" name="KC" value="数码印刷2" title="数码印刷2" />数码印刷2
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                冬
+            </td>
+            <td>
+                <input type="radio" id="smsx" name="KC" value="数码声效" title="数码声效" />数码声效
+            </td>
+            <td>
+                <input type="radio" id="mtcz" name="KC" value="媒体创作" title="媒体创作" />媒体创作
+            </td>
+            <td colspan="2">
+                <input type="radio" id="bzycis" name="KC" value="标志与CIS" title="标志与CIS" />标志与CIS
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                春
+            </td>
+            <td>
+                <input type="radio" id="wl2" name="KC" value="网络2" title="网络2" />网络2
+            </td>
+            <td>
+                <input type="radio" id="sjhj" name="KC" value="视觉环境" title="视觉环境" />视觉环境
+            </td>
+            <td>
+                <input type="radio" id="zssj" name="KC" value="展示设计" title="展示设计" />展示设计
+            </td>
+            <td>
+                <input type="radio" id="sy" name="KC" value="摄影" title="摄影" />摄影
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                夏
+            </td>
+            <td>
+                <input type="radio" id="czsj3" name="KC" value="创作实践3" title="创作实践3" />创作实践2
+            </td>
+            <td>
+                <input type="radio" id="txyy" name="KC" value="图形语意" title="图形语意" />图形语意
+            </td>
+            <td colspan="2">
+            </td>
+        </tr>
+    </table>
+}
+<script type="text/javascript">
+    document.getElementById("Subject").style.backgroundColor = "#EF7919"; 
+</script

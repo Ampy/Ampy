@@ -1,0 +1,60 @@
+﻿@model IEnumerable<SHU.Arts.Arts>
+<table>
+    @if (Model != null)
+    {
+        var users = Model.Select(c => new { XingMing = c.XingMing }).GroupBy(c => c.XingMing);
+
+        foreach (var item in users)
+        {
+
+            bool isFirst = true;
+            bool isEndTr = false;
+
+            var arts = Model.Where(c => c.XingMing == item.Key);
+            int i = 1;
+            foreach (var art in arts)
+            {
+
+                if (i == 1)
+                {
+        @Html.Raw("<tr>");
+                         if (isFirst)
+                         {
+        <td>
+            @Html.DisplayFor(modelItem => item.Key)
+            @{isFirst = false;}
+        </td> 
+      
+                         }
+                         else
+                         {
+        <td>
+        </td>
+                         }
+                }
+
+
+        <td>
+            <img width="50px" height="50px" src="@art.ZuoPinLuJing" /><br />
+            @Html.DisplayFor(modelItem => art.ZuoPinMingCheng)
+        </td> 
+                if (i == 4)
+                { @Html.Raw("</tr>");
+                                    isEndTr = true;
+                }
+
+                i++;
+                if (i == 5)
+                { i = 1; }
+            }
+            if (!isEndTr)
+            {
+                @Html.Raw("</tr>");
+            }
+        }
+        
+    }
+</table>
+<script type="text/javascript">
+    document.getElementById("Student").style.backgroundColor = "#EF7919"; 
+</script

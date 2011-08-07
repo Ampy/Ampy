@@ -1,0 +1,108 @@
+﻿body
+{
+   overflow-y:hidden;
+}
+.page
+{
+    height:600px;
+}
+.byz
+{
+    display: block;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    cursor: pointer;
+    width: 193px;
+    height: 142px;
+    text-align:center;
+    background: url(byz.png);
+   background-repeat:no-repeat;
+    
+}
+.byz:hover
+{
+    background: url(byz2.png);
+}
+
+
+.hj
+{
+    display: block;
+    position: relative;
+    left: 300px;
+    top: -130px;
+    cursor: pointer;
+    width: 148px;
+    height: 140px;
+    background: url(hj.png);
+}
+.hj:hover
+{
+    background: url(hj2.png);
+}
+
+
+.sbzp
+{
+    display: block;
+    position: relative;
+    left: 500px;
+    top: -230px;
+    cursor: pointer;
+    width: 195px;
+    height: 160px;
+    background: url(sbzp.png);
+}
+.sbzp:hover
+{
+    background: url(sbzp2.png);
+}
+
+.djs
+{
+    display: block;
+    position: relative;
+    left: 60px;
+    top: -150px;
+    cursor: pointer;
+    width: 178px;
+    height: 158px;
+    background: url(djs.png);
+}
+.djs:hover
+{
+    background: url(djs2.png);
+}
+
+.jcxy
+{
+    display: block;
+    position: relative;
+    left: 280px;
+    top: -350px;
+    cursor: pointer;
+    width: 190px;
+    height: 155px;
+    background: url(jcxy.png);
+}
+.jcxy:hover
+{
+    background: url(jcxy2.png);
+}
+
+.jsjs
+{
+    display: block;
+    position: relative;
+    left: 500px;
+    top: -500px;
+    cursor: pointer;
+    width: 150px;
+    height: 130px;
+    background: url(jsjs.png);
+}
+.jsjs:hover
+{
+    background: url(jsjs2.png);
+}
