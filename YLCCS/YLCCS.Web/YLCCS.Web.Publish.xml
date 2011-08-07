@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="E:\Publish\LMWEB" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="bin/YLCCS.Web.dll" publishTime="07/24/2011 17:03:44" />
-    <file relUrl="Web.config" publishTime="07/24/2011 17:04:25" />
+    <file relUrl="bin/YLCCS.Web.dll" publishTime="07/28/2011 22:28:00" />
+    <file relUrl="Web.config" publishTime="07/28/2011 22:27:00" />
     <file relUrl="Silverlight.js" publishTime="01/16/2011 16:10:32" />
-    <file relUrl="ClientBin/YLCCS.xap" publishTime="07/24/2011 17:03:47" />
+    <file relUrl="ClientBin/YLCCS.xap" publishTime="07/28/2011 22:26:55" />
     <file relUrl="YLCCSTestPage.html" publishTime="01/16/2011 16:10:32" />
-    <file relUrl="bin/YLCCS.Web.pdb" publishTime="07/24/2011 17:03:44" />
+    <file relUrl="bin/YLCCS.Web.pdb" publishTime="07/28/2011 22:28:00" />
     <file relUrl="YLCCSTestPage.aspx" publishTime="01/16/2011 16:10:32" />
   </publishProfile>
 </publishData>

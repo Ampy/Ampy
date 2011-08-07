@@ -824,3 +824,4 @@ D:\Products\YLCCS\YLCCS\obj\Debug\GenerateResource.write.1.tlog
 D:\Products\YLCCS\YLCCS\obj\Debug\YLCCS.dll
 D:\Products\YLCCS\YLCCS\obj\Debug\YLCCS.pdb
 D:\Products\YLCCS\YLCCS\obj\Debug\XapCacheFile.xml
+D:\Products\YLCCS\YLCCS\obj\Debug\Views\CustomerDataEditor.g.i.cs

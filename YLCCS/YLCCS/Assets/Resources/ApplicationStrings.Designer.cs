@@ -151,6 +151,15 @@ namespace YLCCS {
         }
         
         /// <summary>
+        ///   查找类似 信息修改 的本地化字符串。
+        /// </summary>
+        public static string InfoModify {
+            get {
+                return ResourceManager.GetString("InfoModify", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 信息浏览 的本地化字符串。
         /// </summary>
         public static string InfoView {

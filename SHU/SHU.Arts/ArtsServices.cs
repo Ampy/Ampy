@@ -67,5 +67,20 @@ namespace SHU.Arts
             return slList;
         }
 
+        public static List<Arts> GetAllArts()
+        {
+            DbProviderFactory dp = DbProviderFactories.GetFactory(providerstr);
+
+            using (DbConnection conn = dp.CreateConnection())
+            {
+                conn.ConnectionString = connstr;
+                conn.Open();
+                using (ArtsDataClassDataContext artDC = new ArtsDataClassDataContext(conn))
+                {
+                    return artDC.Arts.ToList();
+                }
+            }
+        }
+
     }
 }

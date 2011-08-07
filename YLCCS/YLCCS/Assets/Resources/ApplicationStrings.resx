@@ -184,4 +184,7 @@
   <data name="InfoView" xml:space="preserve">
     <value>信息浏览</value>
   </data>
+  <data name="InfoModify" xml:space="preserve">
+    <value>信息修改</value>
+  </data>
 </root>

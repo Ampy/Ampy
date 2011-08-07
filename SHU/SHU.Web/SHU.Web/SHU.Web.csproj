@@ -85,7 +85,18 @@
     <Content Include="ArtsCollect\9.jpg" />
     <Content Include="Content\75-black.png" />
     <Content Include="Content\bottom.css" />
+    <Content Include="Content\byz.png" />
+    <Content Include="Content\byz2.png" />
+    <Content Include="Content\djs.png" />
+    <Content Include="Content\djs2.png" />
     <Content Include="Content\fastf.png" />
+    <Content Include="Content\hj.png" />
+    <Content Include="Content\hj2.png" />
+    <Content Include="Content\jcxy.png" />
+    <Content Include="Content\jcxy2.png" />
+    <Content Include="Content\jsjs.png" />
+    <Content Include="Content\jsjs2.png" />
+    <Content Include="Content\logo.png" />
     <Content Include="Content\next-horizontal.png" />
     <Content Include="Content\next-vertical.png" />
     <Content Include="Content\next.png" />
@@ -95,6 +106,8 @@
     <Content Include="Content\prev-vertical.png" />
     <Content Include="Content\prev.png" />
     <Content Include="Content\rewind.png" />
+    <Content Include="Content\sbzp.png" />
+    <Content Include="Content\sbzp2.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -122,6 +135,7 @@
     <Content Include="Content\themes\base\jquery.ui.slider.css" />
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\index.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
@@ -184,6 +198,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Arts\Subject.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Arts\Student.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

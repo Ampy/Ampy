@@ -3,71 +3,81 @@ The base color for this template is #5c87b2. If you'd like
 to use a different color start by replacing all instances of
 #5c87b2 with your new color.
 ----------------------------------------------------------*/
-body {
-    background-color: #5c87b2;
+body
+{
+    background-color: #6F6D6E;
     font-size: .85em;
-    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    font-family: "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
     color: #696969;
 }
 
-a:link {
+a:link
+{
     color: #034af3;
     text-decoration: underline;
 }
 
-a:visited {
+a:visited
+{
     color: #505abc;
 }
 
-a:hover {
+a:hover
+{
     color: #1d60ff;
     text-decoration: none;
 }
 
-a:active {
+a:active
+{
     color: #12eb87;
 }
 
-p, ul {
+p, ul
+{
     margin-bottom: 20px;
     line-height: 1.6em;
 }
 
-header,
-footer,
-nav,
-section {
+header, footer, nav, section
+{
     display: block;
 }
 
 /* HEADINGS   
 ----------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6
+{
     font-size: 1.5em;
     color: #000;
 }
 
-h1 {
+h1
+{
     font-size: 2em;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-h2 {
+h2
+{
     padding: 0 0 10px 0;
 }
 
-h3 {
+h3
+{
     font-size: 1.2em;
 }
 
-h4 {
+h4
+{
     font-size: 1.1em;
 }
 
-h5, h6 {
+h5, h6
+{
     font-size: 1em;
 }
 
@@ -76,20 +86,24 @@ h5, h6 {
 
 /* you can specify a greater or lesser percentage for the 
 page width. Or, you can specify an exact pixel width. */
-.page {
-    width: 90%;
+.page
+{
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #C6BFAF;
 }
 
-header, #header {
+header, #header
+{
     position: relative;
     margin-bottom: 0px;
-    color: #000;
+    color: #F00;
     padding: 0;
 }
 
-header h1, #header h1 {
+header h1, #header h1
+{
     font-weight: bold;
     padding: 5px 0;
     margin: 0;
@@ -100,17 +114,19 @@ header h1, #header h1 {
     text-shadow: 1px 1px 2px #111;
 }
 
-#main {
+#main
+{
+    clear:left;
     padding: 30px 30px 15px 30px;
-    background-color: #fff;
+    background-color: #C6BFAF;
     border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
 }
 
-footer, 
-#footer {
-    background-color: #fff;
+footer, #footer
+{
+    background-color: #C6BFAF;
     color: #999;
     padding: 10px 0;
     text-align: center;
@@ -124,7 +140,8 @@ footer,
 
 /* TAB MENU   
 ----------------------------------------------------------*/
-ul#menu {
+ul#menu
+{
     border-bottom: 1px #5C87B2 solid;
     padding: 0 0 2px;
     position: relative;
@@ -132,12 +149,14 @@ ul#menu {
     text-align: left;
 }
 
-ul#menu li {
+ul#menu li
+{
     display: inline;
     list-style: none;
 }
 
-ul#menu li#greeting {
+ul#menu li#greeting
+{
     padding: 10px 20px;
     font-weight: bold;
     text-decoration: none;
@@ -145,29 +164,36 @@ ul#menu li#greeting {
     color: #fff;
 }
 
-ul#menu li a {
+ul#menu li a
+{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
     padding: 10px 20px;
     font-weight: bold;
     text-decoration: none;
-    line-height: 2.8em;
-    background-color: #e8eef4;
-    color: #034af3;
-    border-radius: 4px 4px 0 0;
-    -webkit-border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
+    line-height: 1.8em; /*background-color: #e8eef4;*/
+    color: Window;
+    border-radius: 0px 0px 0 0;
+    -webkit-border-radius: 0px 0px 0 0;
+    -moz-border-radius: 0px 0px 0 0;
+    text-align: center;
 }
 
-ul#menu li a:hover {
-    background-color: #fff;
+ul#menu li a:hover
+{
+    background-color: #EF7919;
     text-decoration: none;
 }
 
-ul#menu li a:active {
-    background-color: #a6e2a6;
+ul#menu li a:active
+{
+    background-color: #EF7919;
     text-decoration: none;
 }
 
-ul#menu li.selected a {
+ul#menu li.selected a
+{
     background-color: #fff;
     color: #000;
 }
@@ -175,23 +201,26 @@ ul#menu li.selected a {
 /* FORM LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
 
-fieldset {
+fieldset
+{
     border: 1px solid #ddd;
     padding: 0 1.4em 1.4em 1.4em;
     margin: 0 0 1.5em 0;
 }
 
-legend {
+legend
+{
     font-size: 1.2em;
     font-weight: bold;
 }
 
-textarea {
+textarea
+{
     min-height: 75px;
 }
 
-input[type="text"], 
-input[type="password"] {
+input[type="text"], input[type="password"]
+{
     border: 1px solid #ccc;
     padding: 2px;
     font-size: 1.2em;
@@ -199,14 +228,16 @@ input[type="password"] {
     width: 200px;
 }
 
-select {
+select
+{
     border: 1px solid #ccc;
     padding: 2px;
     font-size: 1.2em;
     color: #444;
 }
 
-input[type="submit"] {
+input[type="submit"]
+{
     font-size: 1.2em;
     padding: 5px;
 }
@@ -214,17 +245,20 @@ input[type="submit"] {
 /* TABLE
 ----------------------------------------------------------*/
 
-table {
+table
+{
     border: solid 1px #e8eef4;
     border-collapse: collapse;
 }
 
-table td {
+table td
+{
     padding: 5px;
     border: solid 1px #e8eef4;
 }
 
-table th {
+table th
+{
     padding: 6px 5px;
     text-align: left;
     background-color: #e8eef4;
@@ -233,26 +267,35 @@ table th {
 
 /* MISC  
 ----------------------------------------------------------*/
-.clear {
+.clear
+{
     clear: both;
 }
 
-.error {
+.error
+{
     color: Red;
 }
 
-nav, 
-#menucontainer {
-    margin-top: 40px;
+nav
+{
+    clear:left;
+    background-color: Black;
+}
+nav, #menucontainer
+{
+    margin-top: 10px;
 }
 
-div#title {
+div#title
+{
     display: block;
     float: left;
     text-align: left;
 }
 
-#logindisplay {
+#logindisplay
+{
     font-size: 1.1em;
     display: block;
     text-align: right;
@@ -260,73 +303,125 @@ div#title {
     color: White;
 }
 
-#logindisplay a:link {
+#logindisplay a:link
+{
     color: white;
     text-decoration: underline;
 }
 
-#logindisplay a:visited {
+#logindisplay a:visited
+{
     color: white;
     text-decoration: underline;
 }
 
-#logindisplay a:hover {
+#logindisplay a:hover
+{
     color: white;
     text-decoration: none;
 }
 
 /* Styles for validation helpers
 -----------------------------------------------------------*/
-.field-validation-error {
+.field-validation-error
+{
     color: #ff0000;
 }
 
-.field-validation-valid {
+.field-validation-valid
+{
     display: none;
 }
 
-.input-validation-error {
+.input-validation-error
+{
     border: 1px solid #ff0000;
     background-color: #ffeeee;
 }
 
-.validation-summary-errors {
+.validation-summary-errors
+{
     font-weight: bold;
     color: #ff0000;
 }
 
-.validation-summary-valid {
+.validation-summary-valid
+{
     display: none;
 }
 
 /* Styles for editor and display helpers
 ----------------------------------------------------------*/
-.display-label, 
-.editor-label {
+.display-label, .editor-label
+{
     margin: 1em 0 0 0;
 }
 
-.display-field, 
-.editor-field {
+.display-field, .editor-field
+{
     margin: 0.5em 0 0 0;
 }
 
-.text-box {
+.text-box
+{
     width: 30em;
 }
 
-.text-box.multi-line {
+.text-box.multi-line
+{
     height: 6.5em;
 }
 
-.tri-state {
+.tri-state
+{
     width: 6em;
 }
 
-#headdisplay {
-    font-size: 1.5em;
+#headdisplay
+{
+    font-size: 1.3em;
     display: block;
-    text-align: center;
-    margin: 10px;
+    text-indent: 20px;
+    text-align: left;
     color: White;
+    height: 55px;
+    float: left;
+    height:20px;
+    margin-top:30px;
+    margin-left:10px;
+}
+#headdisplay span
+{
+    top:30px;
+    margin-top: 30px;
+    background-color:Black;
+}
+
+#headlogo
+{
+    font-size: 2.0em;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #34486E;
+    float: left;
+}
+
+#quicksearch
+{
+    position:relative;
+    width: 250px;
+    height: 34px;
+    text-align:center;
+    float:right;
+    top:-40px;
+}
+.ddlist
+{
+    background-color: #EADDBD;
+}
+.ddlist option
+{
+    background-color: #EADDBD;
 }

@@ -1,29 +1,32 @@
 ﻿@model SHU.Arts.Arts
-@{
-
+@using (Html.BeginForm())
+{
 
 }
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <form action="/Arts/Index" method="post" target="_blank">
-    @using (Html.BeginForm())
-    {
-        var m = SHU.Arts.ArtsServices.GetArtsBy("", "", "");
+<a href="#">
+    <div class="byz"></div>
+</a>
+<a href="#">
+    <div class="hj">
+    </div>
+</a>
+<a href="#">
+    <div class="sbzp">
+    </div>
+</a>
 
-        var slList = SHU.Arts.ArtsServices.GetEnumList("年级");
-        @Html.DropDownList("NJ", slList);
+<a href="#">
+    <div class="djs"></div>
+</a>
+<a href="#">
+    <div class="jcxy">
+    </div>
+</a>
+<a href="#">
+    <div class="jsjs">
+    </div>
+</a>
 
-                                        slList = SHU.Arts.ArtsServices.GetEnumList("学期");                                    
-        @Html.DropDownList("XQ", slList);
-
-                                        slList = SHU.Arts.ArtsServices.GetEnumList("课程");                                    
-        @Html.DropDownList("KC", slList);
-        <input type="submit" value="查询" />
-    }
-    </form>
-</body>
-</html>
+<script type="text/javascript">
+    document.getElementById("Index").style.backgroundColor = "#EF7919"; 
+</script>

@@ -42,10 +42,14 @@
                                      NavigateUri="/Home" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.HomePageTitle, Source={StaticResource ResourceWrapper}}"/>
 
                         <HyperlinkButton x:Name="InfoInput" Style="{StaticResource LinkStyle}" 
-                                     Click="hyperlinkButton1_Click_1" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.InfoInput, Source={StaticResource ResourceWrapper}}" Visibility="Collapsed" IsEnabled="True" />
+                                     Click="hyperlinkButton1_Click_1" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.InfoInput, Source={StaticResource ResourceWrapper}}" Visibility="Visible" IsEnabled="True" />
+
+                        <HyperlinkButton x:Name="InfoModify" Style="{StaticResource LinkStyle}" 
+
+                                     TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.InfoModify, Source={StaticResource ResourceWrapper}}" Visibility="Visible" IsEnabled="True" Click="InfoModify_Click" />
 
                         <HyperlinkButton x:Name="InfoView" Style="{StaticResource LinkStyle}" 
-                                    NavigateUri="/CustomerChart" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.InfoView, Source={StaticResource ResourceWrapper}}" Visibility="Collapsed" IsEnabled="True" />                        
+                                    NavigateUri="/CustomerChart" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.InfoView, Source={StaticResource ResourceWrapper}}" Visibility="Visible" IsEnabled="True" />                        
 
                         <Rectangle x:Name="Divider1" Style="{StaticResource DividerStyle}"/>
 

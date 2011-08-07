@@ -19,6 +19,9 @@
         public MainPage()
         {
             InitializeComponent();
+            InfoView.Visibility = System.Windows.Visibility.Collapsed;
+            InfoInput.Visibility = System.Windows.Visibility.Collapsed;
+            InfoModify.Visibility = System.Windows.Visibility.Collapsed;
             //this.loginContainer.Child = new LoginStatus();
             //(StockPanel)this.loginContainer.Child
             this.spLoginStatus.Children.Add(new LoginStatus());
@@ -31,7 +34,7 @@
 
             InfoView.Visibility = System.Windows.Visibility.Collapsed;
             InfoInput.Visibility = System.Windows.Visibility.Collapsed;
-
+            InfoModify.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         void Authentication_LoggedIn(object sender, System.ServiceModel.DomainServices.Client.ApplicationServices.AuthenticationEventArgs e)
@@ -40,11 +43,13 @@
             {
                 InfoView.Visibility = System.Windows.Visibility.Visible;
                 InfoInput.Visibility = System.Windows.Visibility.Visible;
+                InfoModify.Visibility = System.Windows.Visibility.Visible;
             }
             else
             {
                 InfoView.Visibility = System.Windows.Visibility.Visible;
                 InfoInput.Visibility = System.Windows.Visibility.Visible;
+                InfoModify.Visibility = System.Windows.Visibility.Visible;
             }
         }
 
@@ -95,6 +100,12 @@
         private void hbInfoShow_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void InfoModify_Click(object sender, RoutedEventArgs e)
+        {
+            CustomerDataEditor cde = new CustomerDataEditor();
+            cde.Show();
         }
 
     }

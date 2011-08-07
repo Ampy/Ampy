@@ -1,5 +1,5 @@
-﻿<xapCache source="D:\Products\YLCCS\YLCCS\Bin\Debug\YLCCS.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2011/7/24 17:03:47">
-  <file source="D:\Products\YLCCS\YLCCS\obj\Debug\YLCCS.dll" archivePath="YLCCS.dll" lastWriteTime="2011/7/24 17:03:45" />
+﻿<xapCache source="D:\Products\YLCCS\YLCCS\Bin\Debug\YLCCS.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2011/7/30 10:37:02">
+  <file source="D:\Products\YLCCS\YLCCS\obj\Debug\YLCCS.dll" archivePath="YLCCS.dll" lastWriteTime="2011/7/30 10:37:01" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="2010/8/26 2:17:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="2011/1/14 14:13:36" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="2011/1/14 14:13:32" />
@@ -15,5 +15,5 @@
   <file source="D:\Products\YLCCS\YLCCS\Bin\Debug\System.Windows.Controls.Toolkit.dll" archivePath="System.Windows.Controls.Toolkit.dll" lastWriteTime="2010/4/13 20:15:14" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="2010/8/26 2:17:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="2010/8/26 2:17:48" />
-  <file source="D:\Products\YLCCS\YLCCS\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2011/7/24 17:03:46" />
+  <file source="D:\Products\YLCCS\YLCCS\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2011/7/28 22:26:54" />
 </xapCache>

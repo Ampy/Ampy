@@ -17,7 +17,7 @@ namespace SHU.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string url)
+        public ActionResult QueryResult(string url)
         {
             string nj=Request.Form["NJ"];
             string xq=Request.Form["XQ"];
@@ -115,11 +115,20 @@ namespace SHU.Web.Controllers
             }
         }
 
+        /// <summary>
+        /// 课程表
+        /// </summary>
+        /// <returns></returns>
         public ViewResult Subject()
         {
             return View();
         }
 
+        /// <summary>
+        /// 根据课程表查询
+        /// </summary>
+        /// <param name="collection"></param>
+        /// <returns></returns>
         [HttpPost]
         public ViewResult Subject(FormCollection collection)
         {
@@ -128,6 +137,27 @@ namespace SHU.Web.Controllers
             
             var m = SHU.Arts.ArtsServices.GetArtsBy(jie,kc);
             return View("QueryResult", m);
+        }
+
+        /// <summary>
+        /// 学生作品
+        /// </summary>
+        /// <returns></returns>
+        public ViewResult Student()
+        {
+            var m = SHU.Arts.ArtsServices.GetAllArts();
+            return View("Student", m);
+        }
+
+        /// <summary>
+        /// 按届查询
+        /// </summary>
+        /// <param name="jie"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ViewResult Student(string jie)
+        {
+            return View();
         }
     }
 }
