@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<SHU.Arts.Arts>
-<table>
+
+<table align="center">
     @if (Model != null)
     {
         var users = Model.Select(c => new { XingMing = c.XingMing }).GroupBy(c => c.XingMing);
@@ -55,6 +56,3 @@
         
     }
 </table>
-<script type="text/javascript">
-    document.getElementById("Student").style.backgroundColor = "#EF7919"; 
-</script

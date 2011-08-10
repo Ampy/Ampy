@@ -182,7 +182,7 @@ ul#menu li a
 
 ul#menu li a:hover
 {
-    background-color: #EF7919;
+    background-color:Black;;
     text-decoration: none;
 }
 
@@ -280,7 +280,7 @@ table th
 nav
 {
     clear:left;
-    background-color: Black;
+    background-color: #343434;
 }
 nav, #menucontainer
 {
