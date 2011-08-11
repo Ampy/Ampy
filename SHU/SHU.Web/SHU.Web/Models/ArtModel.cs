@@ -60,6 +60,12 @@ namespace SHU.Web.Models
             set;
         }
 
+        public string ZuoPinLuJing2
+        {
+            get;
+            set;
+        }
+
         public string ZuoPinMingCheng
         {
             get;
