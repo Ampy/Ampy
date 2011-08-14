@@ -1,8 +1,6 @@
 E:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Web.dll
 E:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Web.pdb
 E:\Products\SHU\SHU.Web\SHU.Web\bin\EntityFramework.dll
-E:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Arts.dll
-E:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Arts.pdb
 E:\Products\SHU\SHU.Web\SHU.Web\bin\EntityFramework.xml
 E:\Products\SHU\SHU.Web\SHU.Web\obj\Debug\ResolveAssemblyReference.cache
 E:\Products\SHU\SHU.Web\SHU.Web\obj\Debug\SHU.Web.dll
@@ -10,8 +8,6 @@ E:\Products\SHU\SHU.Web\SHU.Web\obj\Debug\SHU.Web.pdb
 D:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Web.dll
 D:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Web.pdb
 D:\Products\SHU\SHU.Web\SHU.Web\bin\EntityFramework.dll
-D:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Arts.dll
-D:\Products\SHU\SHU.Web\SHU.Web\bin\SHU.Arts.pdb
 D:\Products\SHU\SHU.Web\SHU.Web\bin\EntityFramework.xml
 D:\Products\SHU\SHU.Web\SHU.Web\obj\Debug\ResolveAssemblyReference.cache
 D:\Products\SHU\SHU.Web\SHU.Web\obj\Debug\SHU.Web.dll

@@ -188,7 +188,7 @@ ul#menu li a:hover
 
 ul#menu li a:active
 {
-    background-color: #EF7919;
+    background-color: Black;
     text-decoration: none;
 }
 
@@ -411,11 +411,12 @@ div#title
 #quicksearch
 {
     position:relative;
-    width: 250px;
+    
     height: 34px;
     text-align:center;
     float:right;
     top:-40px;
+    margin-right:40px;
 }
 .ddlist
 {

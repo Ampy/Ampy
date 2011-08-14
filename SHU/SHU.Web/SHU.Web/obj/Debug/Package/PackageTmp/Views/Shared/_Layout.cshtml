@@ -27,15 +27,16 @@
                                   {
                     <div id="quicksearch">
                     @{
-                                      var m = SHU.Arts.ArtsServices.GetArtsBy("", "", "");
+                                      SHU.Web.Models.ArtDbContext db = new SHU.Web.Models.ArtDbContext();
+                                      var m = db.Arts.ToList();
 
-                                      var slList = SHU.Arts.ArtsServices.GetEnumList("年级");
+                                      var slList = SHU.Web.Models.ArtsServices.GetNianJiList();
             @Html.DropDownList("NJ", slList, "", new { @class = "ddlist" });
 
-                                                                           slList = SHU.Arts.ArtsServices.GetEnumList("学期");                                    
+                                                                           slList = SHU.Web.Models.ArtsServices.GetXueQiList(); 
             @Html.DropDownList("XQ", slList, "", new { @class = "ddlist" });
 
-                                                                           slList = SHU.Arts.ArtsServices.GetEnumList("课程");                                    
+                                                                           slList = SHU.Web.Models.ArtsServices.GetKeChengList();
             @Html.DropDownList("KC", slList, "", new { @class = "ddlist" });
                                                                           
         }

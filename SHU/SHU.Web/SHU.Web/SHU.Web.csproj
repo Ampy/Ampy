@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArtEditorController.cs" />
     <Compile Include="Controllers\ArtsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -71,7 +72,11 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\ArtDbContext.cs" />
     <Compile Include="Models\ArtModel.cs" />
+    <Compile Include="Models\ArtsServices.cs" />
     <Compile Include="Models\EnumListModel.cs" />
+    <Compile Include="Models\KeChengModel.cs" />
+    <Compile Include="Models\NianJiModel.cs" />
+    <Compile Include="Models\XueQiModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +99,10 @@
     <Content Include="Content\bottom.css" />
     <Content Include="Content\byz.png" />
     <Content Include="Content\byz2.png" />
+    <Content Include="Content\D1.png" />
+    <Content Include="Content\D2.png" />
+    <Content Include="Content\D3.png" />
+    <Content Include="Content\D4.png" />
     <Content Include="Content\djs.png" />
     <Content Include="Content\djs2.png" />
     <Content Include="Content\fastf.png" />
@@ -102,6 +111,7 @@
     <Content Include="Content\jcxy.png" />
     <Content Include="Content\jcxy2.png" />
     <Content Include="Content\jquery.ad-gallery.css" />
+    <Content Include="Content\jScrollPane.css" />
     <Content Include="Content\jsjs.png" />
     <Content Include="Content\jsjs2.png" />
     <Content Include="Content\logo.png" />
@@ -118,6 +128,7 @@
     <Content Include="Content\sbzp.png" />
     <Content Include="Content\sbzp2.png" />
     <Content Include="Content\styles.css" />
+    <Content Include="Content\tab.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -154,10 +165,13 @@
     <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
     <Content Include="Scripts\jquery.ad-gallery.pack.js" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
     <Content Include="Scripts\jquery.pikachoose.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jScrollPane.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Web.config">
@@ -199,12 +213,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SHU.Arts\SHU.Arts.csproj">
-      <Project>{A3710EDF-A47B-4F60-9E48-E4BD0AFFCC9C}</Project>
-      <Name>SHU.Arts</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Arts\QueryResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +226,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_QueryLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ArtEditor\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ArtEditor\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ArtEditor\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ArtEditor\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ArtEditor\Delete.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

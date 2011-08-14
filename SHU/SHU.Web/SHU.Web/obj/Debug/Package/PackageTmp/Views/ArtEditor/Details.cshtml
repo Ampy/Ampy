@@ -1,0 +1,65 @@
+﻿@model SHU.Web.Models.ArtModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>详情</h2>
+
+<fieldset>
+    <legend>作品信息</legend>
+
+    <div class="display-label"> @Html.LabelFor(model => model.XingMing)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.XingMing)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.NianJi)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NianJi.MingCheng)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.Jie)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Jie)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.XueQi)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.XueQi.MingCheng)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.KeCheng)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KeCheng.MingCheng)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.JiangXiang)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JiangXiang)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.ZuoPinLuJing)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ZuoPinLuJing)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.ZuoPinLuJing2)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ZuoPinLuJing2)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.ZuoPinMingCheng)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ZuoPinMingCheng)
+    </div>
+
+    <div class="display-label"> @Html.LabelFor(model => model.Ji)</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ji)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("编辑", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("返回列表", "Index")
+</p>

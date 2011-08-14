@@ -1,41 +1,85 @@
 ﻿@model IEnumerable<SHU.Web.Models.ArtModel>
 @{
+    Layout = "~/Views/Shared/_QueryLayout.cshtml";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#jie").change(function () {
+            var mp = $("#jie").val();
+            window.alert(mp);
+            window.location = "/Arts/KCQuery?jie=" + mp + "&kc=@ViewBag.KC";
+        });
+
+
+    });
+
+</script>
+<style type="text/css">
+    #preJie
+    {
+        position: relative;
+        top: -80px;
+        left: -50px;
+    }
+    #NextJie
+    {
+        position: relative;
+        top: -100px;
+        left: 660px;
+    }
+</style>
+@{
+    if (Model.Count() == 0)
+    {
+    @Html.Label("没有数据");
+    }
+    else
+    {
+    <div id="container" style="width: 580px; margin-left: 40px; margin-right: auto; margin-top:-30px;">
+        <div id="gallery" class="ad-gallery">
+            <div style="background-color: Black; width: 600px; height: 30px">
+                <select id="jie" name="jie" style="margin: 3px 0px 0px 8px">
+                    @{
+        for (int i = 1990; i <= 2011; i++)
+        {
+                        <option id=@i.ToString() value="@i.ToString()">@i.ToString()</option>
+        }
+                    }
+                </select><span style="color: White">届</span></div>
+            <div class="ad-image-wrapper" style="border-width: 10px; border-color: Gray; border-style: solid;
+                height: 300px; width: 580px;">
+            </div>
+            <div class="ad-controls">
+            </div>
+            <div id="descriptions">
+            </div>
+            <div class="ad-nav">
+                <div class="ad-thumbs">
+                    <ul class="ad-thumb-list">
+                        @foreach (var item in Model)
+                        {
+                            <li><a href="@item.ZuoPinLuJing#">
+                                <img src="@item.ZuoPinLuJing2" alt="" title="@item.ZuoPinMingCheng"/>
+                            </a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        @{
+                        int p = @ViewBag.Jie - 1;
+                        int n = @ViewBag.Jie + 1;
+            <div id="preJie">
+                <a href="/Arts/KCQuery?jie=@p&kc=@ViewBag.KC">@p 届</a></div>
+            <div id="NextJie">
+                <a href="/Arts/KCQuery?jie=@n&kc=@ViewBag.KC">@n 届</a></div>
+        }
+    </div>
+
+    }
+
 
 }
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-    <title></title>
-    <link href="@Url.Content("~/Content/bottom.css")" rel="stylesheet" type="text/css" />
-    <script src="@Url.Content("~/Scripts/jquery.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/jquery.pikachoose.js")" type="text/javascript"></script>
-    <script language="javascript" type="text/javascript">
-        $(document).ready(
-				function () {
-				    $("#pikame").PikaChoose({ carousel: true });
-				});
-    </script>
-</head>
-<body>
-    <!-- not really needed, i'm using it to center the gallery. -->
-    @{
-        if (Model.Count() == 0)
-        {
-            @Html.Label("没有数据");
-        }
-        else
-        {
-        <div class="pikachoose">
-            <ul id="pikame" class="jcarousel-skin-pika">
-                @foreach (var item in Model)
-                {
-                    <li><a href="#">
-                        <img src="@item.ZuoPinLuJing" alt=""/></a><span>@item.ZuoPinMingCheng</span>
-                    </li>
-                }
-            </ul>
-        </div>
-        }
-    }
-</body>
-</html>
+<script type="text/javascript">
+    document.getElementById("Subject").style.backgroundColor = "#EF7919"; 
+</script>

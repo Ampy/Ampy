@@ -1,0 +1,88 @@
+﻿
+@model IEnumerable<SHU.Web.Models.ArtModel>
+
+@{
+    ViewBag.Title = "作品列表";
+}
+
+<h2>作品列表</h2>
+
+<p>
+    @Html.ActionLink("新增", "Create")
+</p>
+<table width="100%">
+    <tr>
+        <th>
+            姓名
+        </th>
+        <th>
+            年级
+        </th>
+        <th>
+            届
+        </th>
+        <th>
+            学期
+        </th>
+        <th>
+            课程
+        </th>
+        <th>
+            奖项
+        </th>
+        <th>
+            作品路径
+        </th>
+        <th>
+            缩略图路径
+        </th>
+        <th>
+            作品名称
+        </th>
+        <th>
+            级
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.XingMing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NianJi.MingCheng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.XueQi.MingCheng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KeCheng.MingCheng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JiangXiang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZuoPinLuJing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZuoPinLuJing2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZuoPinMingCheng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ji)
+        </td>
+        <td>
+            @Html.ActionLink("编辑", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("详情", "Details", new { id=item.ID }) |
+            @Html.ActionLink("删除", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

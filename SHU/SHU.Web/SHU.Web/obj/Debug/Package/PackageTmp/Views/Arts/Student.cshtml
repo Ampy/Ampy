@@ -1,58 +1,150 @@
-﻿@model IEnumerable<SHU.Arts.Arts>
+﻿@model IEnumerable<SHU.Web.Models.ArtModel>
+@{
+           
+}
+<link rel="stylesheet" type="text/css" href=@Url.Content("~/Content/jScrollPane.css") media="all">
+<script type="text/javascript" src=@Url.Content("~/Scripts/jquery.mousewheel.js")></script>
+<script type="text/javascript" src=@Url.Content("~/Scripts/jScrollPane.js")></script>
+<script type="text/javascript">
 
-<table align="center">
-    @if (Model != null)
-    {
-        var users = Model.Select(c => new { XingMing = c.XingMing }).GroupBy(c => c.XingMing);
+    $(function () {
+        // this initialises the demo scollpanes on the page.
+        $('#pane1').jScrollPane({ scrollbarWidth: 14 });
 
-        foreach (var item in users)
-        {
 
-            bool isFirst = true;
-            bool isEndTr = false;
+    });
+</script>
+<style type="text/css">
+table
+{
+    border: solid 0px #e8eef4;
+    border-collapse: collapse;
+}
 
-            var arts = Model.Where(c => c.XingMing == item.Key);
-            int i = 1;
-            foreach (var art in arts)
+table td
+{
+    padding: 5px;
+    border: solid 0px #e8eef4;
+}
+
+.xmtab
+{
+
+    background:url("/Content/tab.png");
+    width:60px;
+    height:100px;
+    margin-top:-20px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:100px;
+    color:#E9DDBD;
+ }
+ #searchbar
+ {
+     margin 0 aut;
+     width:450px;
+     height:30px;
+     margin-left:110px;
+     overflow:hidden;
+ }
+  #searchbar2
+ {
+     position:relative;
+          float:left;
+     top:-30px;
+     left:10px;
+     vertical-align:middle;
+     line-height:30px;
+     height:30px;
+     overflow:hidden;
+ }
+ 
+   #searchbar3
+ {
+     position:relative;
+     float:right;
+          top:-30px;
+          margin-right:30px;
+          height:30px;
+          overflow:hidden;
+ }
+ 
+</style>
+
+<div style="width: 600px; margin: 0 auto;">
+    <div id="searchbar">
+        <img src="/Content/searchbar.png" width="430px;" />
+        <div id="searchbar2">
+            <span style="color:#E9DDBD">1999届学生作品</span></div>
+        <div id="searchbar3">
+            <select id="jie" name="jie">
+                @{
+                    for (int i = 1990; i <= 2011; i++)
+                    {
+                    <option id=@i.ToString() value="@i.ToString()">@i.ToString()</option>
+                    }
+                }
+            </select>
+            <span style="color:#E9DDBD">届</span>
+        </div>
+    </div>
+    <div id="pane1" class="scroll-pane">
+        <table cellpadding="0" cellspacing="0" border="0" id="kechengbiao" align="center"
+            width="80%">
+            @if (Model != null)
             {
+                var users = Model.Select(c => new { XingMing = c.XingMing }).GroupBy(c => c.XingMing);
 
-                if (i == 1)
+                foreach (var item in users)
                 {
-        @Html.Raw("<tr>");
-                         if (isFirst)
-                         {
-        <td>
-            @Html.DisplayFor(modelItem => item.Key)
-            @{isFirst = false;}
-        </td> 
+
+                    bool isFirst = true;
+                    bool isEndTr = false;
+
+                    var arts = Model.Where(c => c.XingMing == item.Key);
+                    int i = 1;
+                    foreach (var art in arts)
+                    {
+
+                        if (i == 1)
+                        {
+                @Html.Raw("<tr>");
+                                 if (isFirst)
+                                 {
+                <td>
+                    <div class="xmtab">@Html.DisplayFor(modelItem => item.Key)</div>
+                    @{isFirst = false;}
+                </td> 
       
-                         }
-                         else
-                         {
-        <td>
-        </td>
-                         }
-                }
+                                 }
+                                 else
+                                 {
+                <td>
+                </td>
+                                 }
+                        }
 
 
-        <td>
-            <img width="50px" height="50px" src="@art.ZuoPinLuJing" /><br />
-            @Html.DisplayFor(modelItem => art.ZuoPinMingCheng)
-        </td> 
-                if (i == 4)
-                { @Html.Raw("</tr>");
-                                    isEndTr = true;
-                }
+                <td>
+                    <img width="100px" height="100px" src="@art.ZuoPinLuJing" /><br />
+                    @Html.DisplayFor(modelItem => art.ZuoPinMingCheng)
+                </td> 
+                        if (i == 4)
+                        { @Html.Raw("</tr>");
+                                            isEndTr = true;
+                        }
 
-                i++;
-                if (i == 5)
-                { i = 1; }
-            }
-            if (!isEndTr)
-            {
+                        i++;
+                        if (i == 5)
+                        { i = 1; }
+                    }
+                    if (!isEndTr)
+                    {
                 @Html.Raw("</tr>");
+                    }
+                }
+
             }
-        }
-        
-    }
-</table>
+        </table>
+    </div>
+</div>

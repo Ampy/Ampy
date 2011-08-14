@@ -14,19 +14,19 @@ namespace SHU.Web.Controllers
         // GET: /Arts/
         public ActionResult Index()
         {
-            
+
             return View();
         }
 
         [HttpPost]
         public ActionResult QueryResult(string url)
         {
-            string nj=Request.Form["NJ"];
-            string xq=Request.Form["XQ"];
-            string kc=Request.Form["KC"];
-
-            var m = SHU.Arts.ArtsServices.GetArtsBy(nj, xq, kc);
-            return View("QueryResult",m);
+            string nj = Request.Form["NJ"];
+            string xq = Request.Form["XQ"];
+            string kc = Request.Form["KC"];
+            ArtDbContext db = new ArtDbContext();
+            var m = db.Arts.Where(c => c.NianJiId == nj && c.XueQiId == xq && c.KeChengId == kc).ToList();
+            return View("QueryResult", m);
 
         }
 
@@ -45,7 +45,7 @@ namespace SHU.Web.Controllers
         public ActionResult Create()
         {
             return View();
-        } 
+        }
 
         //
         // POST: /Arts/Create
@@ -64,10 +64,10 @@ namespace SHU.Web.Controllers
                 return View();
             }
         }
-        
+
         //
         // GET: /Arts/Edit/5
- 
+
         public ActionResult Edit(int id)
         {
             return View();
@@ -82,7 +82,7 @@ namespace SHU.Web.Controllers
             try
             {
                 // TODO: Add update logic here
- 
+
                 return RedirectToAction("Index");
             }
             catch
@@ -93,7 +93,7 @@ namespace SHU.Web.Controllers
 
         //
         // GET: /Arts/Delete/5
- 
+
         public ActionResult Delete(int id)
         {
             return View();
@@ -108,7 +108,7 @@ namespace SHU.Web.Controllers
             try
             {
                 // TODO: Add delete logic here
- 
+
                 return RedirectToAction("Index");
             }
             catch
@@ -136,8 +136,8 @@ namespace SHU.Web.Controllers
         {
             var jie = collection["Jie"];
             var kc = collection["KC"];
-            
-            var m = SHU.Arts.ArtsServices.GetArtsBy(jie,kc);
+            ArtDbContext db = new ArtDbContext();
+            var m = db.Arts.Where(c => c.Jie == jie && c.KeChengId == kc).ToList();
             return View("QueryResult", m);
         }
 
@@ -147,7 +147,8 @@ namespace SHU.Web.Controllers
         /// <returns></returns>
         public ViewResult Student()
         {
-            var m = SHU.Arts.ArtsServices.GetAllArts();
+            ArtDbContext db = new ArtDbContext();
+            var m = db.Arts.ToList();
             return View("Student", m);
         }
 
@@ -162,30 +163,35 @@ namespace SHU.Web.Controllers
             return View();
         }
 
-        public ViewResult KCQuery(string jie, string kc)
+        public ViewResult KCQuery(int jie, string kc)
         {
-            //var m = SHU.Arts.ArtsServices.g
-        string connstr = "Data Source=|DataDirectory|\\StarterSite.sdf;Persist Security Info=False";
-        string providerstr = "System.Data.SqlServerCe.4.0";
+            ////var m = SHU.Arts.ArtsServices.g
+            //string connstr = "Data Source=|DataDirectory|\\StarterSite.sdf;Persist Security Info=False";
+            //string providerstr = "System.Data.SqlServerCe.4.0";
 
-            DbProviderFactory dp = DbProviderFactories.GetFactory(providerstr);
+            //DbProviderFactory dp = DbProviderFactories.GetFactory(providerstr);
 
-            using (DbConnection conn = dp.CreateConnection())
+            //using (DbConnection conn = dp.CreateConnection())
+            //{
+            //    conn.ConnectionString = connstr;
+            //    //conn.Open();
+            //    using (ArtDbContext db = new ArtDbContext(conn, true))
+            //    {
+            //        List<ArtModel> m = db.Arts.ToList();//.Where(c => c.Jie == jie && c.KeCheng == kc);
+
+            //        return View(m);
+            //    }
+            //}
+
+            ViewBag.Jie = jie;
+            ViewBag.KC = kc;
+            using (ArtDbContext db = new ArtDbContext())
             {
-                conn.ConnectionString = connstr;
-                //conn.Open();
-                using (ArtDbContext db = new ArtDbContext(conn,true))
-                {
-                    List<ArtModel> m = db.Arts.ToList();//.Where(c => c.Jie == jie && c.KeCheng == kc);
+                List<ArtModel> m = db.Arts.ToList();//.Where(c => c.Jie == jie && c.KeCheng == kc);
 
-                    return View(m);
-                }
+                return View(m);
             }
-   
             
-           
-
-
         }
     }
 }

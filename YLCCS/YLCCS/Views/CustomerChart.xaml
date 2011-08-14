@@ -1,12 +1,18 @@
-﻿<navigation:Page x:Class="YLCCS.Views.CustomerChart" 
+﻿<navigation:Page 
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="YLCCS.Views.CustomerChart"
            mc:Ignorable="d"
-           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" Title="CustomerChart Page" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" d:DesignHeight="639" d:DesignWidth="639">
-    <Grid x:Name="LayoutRoot" Width="Auto">
-        <toolkit:Chart HorizontalAlignment="Stretch" Margin="38,44,0,0" Name="chart1" Title="Chart Title" VerticalAlignment="Stretch" Height="Auto" Width="Auto">
+           Title="CustomerChart Page" d:DesignHeight="480" d:DesignWidth="640" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch">
+    <Grid x:Name="LayoutRoot" Background="#FFA5F124" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="495*" />
+            <ColumnDefinition Width="145" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+        <toolkit:Chart Margin="0" x:Name="chart1" Title="Chart Title" VerticalAlignment="Stretch" Height="556">
             <toolkit:LineSeries  DependentValuePath="X" IndependentValuePath="Y" Background="Red" IsSelectionEnabled="True">
                 <toolkit:LineSeries.ItemsSource>
                     <PointCollection>
@@ -52,6 +58,29 @@
             </toolkit:LineSeries>
 
         </toolkit:Chart>
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="0,0,519,0" Name="comboBox1" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox1_SelectionChanged" Visibility="Collapsed" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="5">
+            <ComboBox Height="23" HorizontalAlignment="Left" x:Name="comboBox1" SelectionChanged="comboBox1_SelectionChanged" Margin="0,10,0,0"/>
+            <StackPanel Orientation="Horizontal">
+                <sdk:Label Content="类型"></sdk:Label>
+                <ComboBox Margin="0,5,0,0"/>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <sdk:Label Content="年份"></sdk:Label><sdk:DatePicker Margin="0,5,0,0"/>
+            </StackPanel>
+            <CheckBox x:Name="M1" Content="一月份" Margin="0,5,0,0"/>
+        <CheckBox Content="二月份" Name="M2" Margin="0,5,0,0" />
+        <CheckBox Content="三月份" Name="M3" Margin="0,5,0,0" />
+        <CheckBox Content="四月份" Name="M4" Margin="0,5,0,0" />
+        <CheckBox Content="五月份" Name="M5" Margin="0,5,0,0" />
+        <CheckBox Content="六月份" Name="M6" Margin="0,5,0,0" />
+        <CheckBox Content="七月份" Name="M7" Margin="0,5,0,0" />
+        <CheckBox Content="八月份" Name="M8" Margin="0,5,0,0" />
+        <CheckBox Content="九月份" Name="M9" Margin="0,5,0,0" />
+        <CheckBox Content="十月份" Name="M10" Margin="0,5,0,0" />
+        <CheckBox Content="十一月份" Name="M11" Margin="0,5,0,0" />
+        <CheckBox Content="十二月份" Name="M12" Margin="0,5,0,0" />
+        </StackPanel>
     </Grid>
 </navigation:Page>

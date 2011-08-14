@@ -1,0 +1,107 @@
+﻿@model SHU.Web.Models.ArtModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>编辑</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>作品信息</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.XingMing)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.XingMing)
+            @Html.ValidationMessageFor(model => model.XingMing)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NianJiId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("NianJiId", String.Empty)
+            @Html.ValidationMessageFor(model => model.NianJiId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Jie)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Jie)
+            @Html.ValidationMessageFor(model => model.Jie)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.XueQiId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("XueQiId", String.Empty)
+            @Html.ValidationMessageFor(model => model.XueQiId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.KeChengId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("KeChengId", String.Empty)
+            @Html.ValidationMessageFor(model => model.KeChengId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JiangXiang)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.JiangXiang)
+            @Html.ValidationMessageFor(model => model.JiangXiang)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ZuoPinLuJing)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ZuoPinLuJing)
+            @Html.ValidationMessageFor(model => model.ZuoPinLuJing)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ZuoPinLuJing2)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ZuoPinLuJing2)
+            @Html.ValidationMessageFor(model => model.ZuoPinLuJing2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ZuoPinMingCheng)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ZuoPinMingCheng)
+            @Html.ValidationMessageFor(model => model.ZuoPinMingCheng)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Ji)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Ji)
+            @Html.ValidationMessageFor(model => model.Ji)
+        </div>
+
+        <p>
+            <input type="submit" value="保存" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("返回列表", "Index")
+</div>

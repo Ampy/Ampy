@@ -54,7 +54,7 @@
                         <Rectangle x:Name="Divider1" Style="{StaticResource DividerStyle}"/>
 
                         <HyperlinkButton x:Name="Link2" Style="{StaticResource LinkStyle}" 
-                                     NavigateUri="/About" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.AboutPageTitle, Source={StaticResource ResourceWrapper}}"/>
+                                     NavigateUri="/TestView" TargetName="ContentFrame" Content="{Binding Path=ApplicationStrings.AboutPageTitle, Source={StaticResource ResourceWrapper}}"/>
 
                     </StackPanel>
                 </Border>

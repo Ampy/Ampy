@@ -1,0 +1,85 @@
+﻿/*Start General Styles - NOT RELEVANT for this tutorial*/
+
+p {margin:0;padding:0;clear:both;color:#666;font-family:Georgia,serif;font-size:11px;line-height:18px;}
+a:link, a:visited, a:hover, a:active {text-decoration:none;}
+.clearer {clear: both;}
+/*End General Styles*/
+
+
+#content
+{
+	 background-color:#C6BFAF;
+	
+}
+/* Start button effects */
+
+/* Tuturial button*/
+.button {
+	/*width:570px;
+	height:64px;*/
+	display:block;
+	/*background-image:url(images/downloadbutton.png);*/
+	/*background-position: top;*/
+	background-color:white;	
+}
+.button:hover{
+	/*width:570px; 
+	background-position: bottom;
+	height:64px;
+	background-image:url(images/downloadbutton.png) no repeat;*/
+	background-color:#EADDBD;
+}
+.button span{
+	display:block;	
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table
+{
+    border: solid 0px #e8eef4 !important; 
+    border-collapse: collapse;
+}
+
+table td
+{
+    padding: 5px;
+    border: solid 0px #e8eef4 !important;
+}
+
+table th
+{
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4 !important;
+}
+
+.tdclass
+{
+	border-style:solid none none solid !important;
+	border-width:thin;
+	border-color:silver;
+	text-align:center;
+	background-color:white;
+	border: solid 1px #e8eef4 !important;
+}
+.tdclass span
+{
+ font-size:20px;
+}
+.tdright
+{
+	border-right-style:solid !important;
+	border-width:thin;
+	border-color:silver;
+}
+.tdbottom
+{
+	border-style:none none solid none !important;
+	border-width:thin;
+	border-color:silver;
+}
+
+/* End button effects */
